@@ -5,4 +5,18 @@
     <string name="category_family">Family</string>
     <string name="category_phrases">Phrases</string>
     <string name="category_colors">Colors</string>
+
+    <!-- Category Numbers : English -->
+    <string name="eng_1">one</string>
+    <string name="eng_2">two</string>
+    <string name="eng_3">three</string>
+    <string name="eng_4">four</string>
+    <string name="eng_5">five</string>
+    <string name="eng_6">six</string>
+    <string name="eng_7">seven</string>
+    <string name="eng_8">eight</string>
+    <string name="eng_9">nine</string>
+    <string name="eng_10">ten</string>
+
+
 </resources>
