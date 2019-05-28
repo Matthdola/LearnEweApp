@@ -1,6 +1,9 @@
 package com.example.dola.eweapp;
 
 public class Word {
+
+    private int mImageResourceId;
+
     /** Default translation for the word */
     private String mDefaultTranslation;
 
@@ -16,6 +19,14 @@ public class Word {
         this.mDefaultTranslation = defaultTranslation;
         this.mEweTranslation = eweTranslation;
     }
+
+
+    public  Word(String defaultTranslation, String eweTranslation, int imageResourceId){
+        this.mDefaultTranslation = defaultTranslation;
+        this.mEweTranslation = eweTranslation;
+        this.mImageResourceId = imageResourceId;
+    }
+
 
     /**
      * Get the default translation of the word
