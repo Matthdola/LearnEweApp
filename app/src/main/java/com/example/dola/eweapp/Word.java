@@ -10,6 +10,8 @@ public class Word {
     /** Ewe translation for the word*/
     private String mEweTranslation;
 
+    private int mAudioResource;
+
     /**
      * Create a new Word object
      * @param defaultTranslation is the word in a language that the user is already familiar with
@@ -43,4 +45,20 @@ public class Word {
         return mEweTranslation;
     }
 
+
+    public int getmAudioResource() {
+        return mAudioResource;
+    }
+
+    public void setmAudioResource(int mAudioResource) {
+        this.mAudioResource = mAudioResource;
+    }
+
+    public int getmImageResourceId() {
+        return mImageResourceId;
+    }
+
+    public void setmImageResourceId(int mImageResourceId) {
+        this.mImageResourceId = mImageResourceId;
+    }
 }

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_numbers_fragment"
+            android:icon="@drawable/numbers"
+            android:title="Numbers"
+            />
+
+        <item android:id="@+id/nav_family_fragment"
+            android:icon="@drawable/family"
+            android:title="Family" />
+
+        <item android:id="@+id/nav_colors_fragment"
+            android:icon="@drawable/colors"
+            android:title="Colors" />
+
+        <item android:id="@+id/nav_phrases_fragment"
+            android:icon="@drawable/numbers"
+            android:title="Phrases" />
+    </group>
+</menu>
