@@ -2,7 +2,7 @@ package com.example.dola.eweapp;
 
 public class Word {
 
-    private int mImageResourceId;
+    private int mImageResourceId = -1;
 
     /** Default translation for the word */
     private String mDefaultTranslation;

@@ -6,6 +6,8 @@ import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -71,9 +73,8 @@ public class FamilyFragment extends Fragment {
 
     }
 
+    RecyclerView listView;
 
-
-    ListView listView;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -102,17 +103,25 @@ public class FamilyFragment extends Fragment {
 
         // Create an WordAdapter, whose data source is list of Word. The
         // adapter knows how to create list items for each item in the list.
-        WordAdapter itemsAdapter = new WordAdapter(getActivity(), words);
+        WordAdapter itemsAdapter = new WordAdapter(words);
 
 
         // Find the listview object in the view hierarchy of the Activity
         //There should be a ListView with the view ID called list, which is declared in the activity_words.xml file
         listView = rootView.findViewById(R.id.list);
 
+
+        listView.setHasFixedSize(true);
+
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
+        listView.setLayoutManager(layoutManager);
+        listView.setClickable(true);
+
         // Make the ListView use the WordAdapter we created above, so that the
         // ListView will display list items for each Word in the list
         listView.setAdapter(itemsAdapter);
 
+        /*
         // Set a click listener to play the audio when the list item is clicked on
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -146,6 +155,8 @@ public class FamilyFragment extends Fragment {
                 }
             }
         });
+
+        */
 
 
         return rootView;
